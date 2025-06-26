@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <style>
+        @import url("Leotaro_Regular/stylesheet.css");
+
+        @font-face {
+            font-family: 'Aquawax';
+            src: url('Aquawax-Fx-Extralight-Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Leotaro';
+            src: url('Leotaro-Regular.woff') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Aquawax', sans-serif; 
+             background-color:  #e3fed3; 
+            background-size: cover;
+            background-position: center; 
+        }
+        header {
+            background-color: #e0bdee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+       nav ul li {
+            display: inline-block;
+            position: relative; 
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+.submenu {
+            display: none; /* Скрываем подменю по умолчанию */
+            position: absolute; /* Позиционируем подменю относительно родителя */
+            top: 100%; /* Ставим подменю ниже основного пункта */
+            left: 0;
+            background-color: #fff; /* Цвет фона подменю */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Повышаем уровень слоя */
+        }
+
+        .submenu li {
+            display: block; /* Отображаем элементы подменю как блочные */
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 8px 12px; /* Отступы в подменю */
+            display: block; /* Делаем ссылки блочными элементами */
+        }
+
+        nav ul li:hover .submenu {
+            display: block; /* Показываем подменю при наведении на пункт */
+        }
+       .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 100px 20px 20px; /* Отступ сверху, чтобы избежать наложения на меню */
+        }
+
+        .product-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            max-width: 200px;  /* Ограничение ширины */
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;  /* Изображение занимает всю ширину контейнера */
+            height: auto; /* Автоматическая настройка высоты пропорционально ширине */
+            border-radius: 5px; /* Закругление углов изображения */
+        }
+
+        .product-details {
+    margin-top: 10px;
+    font-family: "Leotaro Regular";
+        }
+
+        .buy-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #218838;
+        }
+
+         footer {
+            background-color: #e0bdee; 
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nev.html">Новинки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="work.html">Вакансии</a></li>
+                <li>
+                    <a href="#">Дополнительно</a> <!-- Новый пункт меню -->
+                    <ul class="submenu">
+                        <li><a href="akc.html">Акции</a></li>
+                        <li><a href="loyal.html">Программа лояльности</a></li>
+                        <li><a href="oo.html">Отзывы</a></li>
+<li><a href="dop.html">Другая продукция</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="product-container">
+            <img src="6.JPG" alt="Розовый рассвет" class="product-image">
+            <div class="product-details">
+                <h1 class="product-title" style="font-family: 'Leotaro Regular'">Розовый рассвет</h1>
+                <p class="product-price">Цена: <span style="color: #700C89; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">1000</span> руб.</p>
+               <a href="opl.html" class="buy-button">Купить</a>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="7.JPG" alt="Товар 2" class="product-image">
+            <div class="product-details">
+                <h1 class="product-title"><span style="font-family: 'Leotaro Regular'">Шелковый ветер</span>&nbsp;</h1>
+                <p class="product-price">Цена: <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">1500 </span>руб.</p>
+                <a href="opl.html" class="buy-button">Купить</a>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="8.JPG" alt="Товар 3" class="product-image">
+            <div class="product-details">
+                <h1 class="product-title">Молочная луна&nbsp;</h1>
+                <p class="product-price">Цена: <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">2000 </span>руб.</p>
+               <a href="opl.html" class="buy-button">Купить</a>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <img src="9.jpg" alt="Товар 4" class="product-image">
+            <div class="product-details">
+                <h1 class="product-title">Пудровый мусс&nbsp;</h1>
+                <p class="product-price">Цена: <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">2500</span> руб.</p>
+              <p> <a href="opl.html" class="buy-button">Купить</a> </p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+   <p>Воронеж, ул. Пл. Ленина <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #1B1B1B;">10.</span>&nbsp;</p>
+   <p>Мы в социальных сетях: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>Все права защищены<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025&nbsp;</span></p>
+</footer>
+</body>
+</html>

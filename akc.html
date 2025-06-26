@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный магазин</title>
+     <style>
+     @import url("Leotaro_Regular/stylesheet.css");
+
+        @font-face {
+            font-family: 'Aquawax';
+            src: url('Aquawax-Fx-Extralight-Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Leotaro';
+            src: url('Leotaro-Regular.woff') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Aquawax', sans-serif; 
+             background-color:  #e3fed3; 
+            background-size: cover;
+            background-position: center; 
+        }
+        header {
+            background-color: #e0bdee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative; 
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+.submenu {
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            background-color: #fff; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; 
+        }
+
+        .submenu li {
+            display: block; 
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 8px 12px; 
+            display: block; 
+        }
+
+        nav ul li:hover .submenu {
+            display: block; 
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+        .content div {
+            flex: 1; 
+            max-width: 40%; 
+        }
+        .content img {
+            max-width: 60%; 
+            height: auto;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+          
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+        h1 {
+    text-align: center;
+    font-family: "Leotaro Regular";
+        }
+        .button {
+            background-color: #e0bdee;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #e0bdee; 
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+     </style>
+</head>
+<body>
+
+     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nev.html">Новинки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="work.html">Вакансии</a></li>
+                <li>
+                    <a href="#">Дополнительно</a> 
+                    <ul class="submenu">
+                        <li><a href="akc.html">Акции</a></li>
+                        <li><a href="loyal.html">Программа лояльности</a></li>
+                        <li><a href="oo.html">Отзывы</a></li>
+<li><a href="dop.html">Другая продукция</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="highlight-section" style="background-color:  #e3fed3;">
+     <h1>&nbsp;</h1>
+       <h1>&nbsp;</h1>
+        <h1>Акции, подарки, подписки и выгодные предложения</h1>
+   </div>
+  <div class="container">
+    <div class="text">
+        <h2>Текущие акции в «Bloom Lab»</h2>
+        <h3>Сделайте ваш день ярче с выгодными предложениями от Bloom Lab!</h3>
+        <ul>
+            <li>«Цветочный коктейль» – соберите<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 3</span> любых букета по цене<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2</span>-х!</li>
+            <li>Скидка <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">20</span>% на все комнатные растения – создайте уют с зелеными друзьями.</li>
+            <li>Бесплатная доставка при заказе от <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">5 000</span> ₽ в пределах города.</li>
+            <li>Счастливые часы – каждый день с <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">9:00</span> до <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">11:00 </span>скидка <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">15</span>% на все букеты.</li>
+        </ul>
+        <p>Акции действуют до <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">31.07.2024.</span> Подробности уточняйте у менеджеров.</p>
+        
+        <h2>Спецпредложения для новых клиентов</h2>
+        <p>Рады видеть вас в Bloom Lab! Дарим подарки за первый заказ:</p>
+        <ul>
+            <li>Промокод WELCOME<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">10</span> – скидка <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">10</span>% на любой букет.</li>
+            <li>Мини-букет в подарок при заказе от <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">3 500 </span>₽.</li>
+            <li>Бонусная карта – накапливайте баллы и получайте скидки до <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">25</span>%.</li>
+        </ul>
+        <p>Предложения доступны только при первом заказе.</p>
+	
+      <div class="content">
+        <div>
+           <h2>Подарочные сертификаты</h2>
+        <p>Подарите любимым радость и красоту!</p>
+        <ul>
+            <li>Сертификат на любую сумму – от&nbsp;</li>
+            <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">1 000 </span>₽ до <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">10 000</span> ₽.
+<li>Дополнительный сюрприз – при активации сертификата от <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">5 000</span> ₽ дарим открытку ручной работы.</li>
+        </ul>
+        <p>Срок действия – 6 месяцев. Можно использовать на букеты, растения и декор.</p>
+			
+         
+        </div>
+        <img src="sertf.jpg" width="357" height="223"> 
+    </div>
+        
+        <h2>Цветочные подписки</h2>
+        <p>Хотите, чтобы свежие цветы радовали вас или ваших близких регулярно? Оформите цветочную подписку!</p>
+        <ul>
+            <li>«Неделя радости» – еженедельная доставка свежего букета (<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">4</span> раза в месяц) со скидкой <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">15</span>%.</li>
+            <li>«Месяц вдохновения» – <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">2 </span>шикарных букета в месяц + бонусный мини-букет.</li>
+            <li>«Годовой восторг» – ежемесячная доставка эксклюзивного букета + бесплатная доставка и открытка к каждому заказу.</li>
+        </ul>
+        <h3>Почему стоит выбрать подписку?</h3>
+        <ul>
+            <li>Экономия до<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 20</span>% по сравнению с разовыми покупками</li>
+            <li>Всегда свежие и сезонные цветы</li>
+            <li>Гибкие условия – можно пропустить или изменить дату доставки</li>
+            <li>Персональные рекомендации от нашего флориста</li>
+        </ul>
+        <p>Оформите подписку на сайте или по телефону и получайте цветы с настроением!</p>
+        </div>
+
+ <footer>
+        <p>Воронеж, ул. Пл. Ленина <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #1B1B1B;">10.</span>&nbsp;</p>
+   <p>Мы в социальных сетях: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>Все права защищены<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025&nbsp;</span></p>
+</footer>
+
+</body>
+</html>

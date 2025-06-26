@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный магазин</title>
+     <style>
+     @import url("Leotaro_Regular/stylesheet.css");
+@import url("Leotaro_Regular/stylesheet.css");
+@import url("Aquawax_Fx_Extralight_Italic_trial/stylesheet.css");
+@import url("Aquawax_Fx_Extralight_Italic_trial/stylesheet.css");
+@import url("Leotaro_Regular/stylesheet.css");
+
+        @font-face {
+            font-family: 'Aquawax';
+            src: url('Aquawax-Fx-Extralight-Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Leotaro';
+            src: url('Leotaro-Regular.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Aquawax Fx Extralight Italic trial",sans-serif; 
+            background-image: url('front.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            
+        }
+        header {
+            background-color: #e0bdee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: "Aquawax Fx Extralight Italic trial";
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative; 
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+ .submenu {
+            display: none; /* Скрываем подменю по умолчанию */
+            position: absolute; /* Позиционируем подменю относительно родителя */
+            top: 100%; /* Ставим подменю ниже основного пункта */
+            left: 0;
+            background-color: #fff; /* Цвет фона подменю */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Повышаем уровень слоя */
+        }
+
+        .submenu li {
+            display: block; /* Отображаем элементы подменю как блочные */
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 8px 12px; /* Отступы в подменю */
+            display: block; /* Делаем ссылки блочными элементами */
+        }
+
+        nav ul li:hover .submenu {
+            display: block; /* Показываем подменю при наведении на пункт */
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+        .content div {
+            flex: 1; 
+            max-width: 40%; 
+        }
+        .content img {
+            max-width: 60%; 
+            height: auto;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+          
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+        h1 {
+    text-align: center;
+    font-family: "Leotaro Regular";
+        }
+        .button {
+    background-color: #e0bdee;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Aquawax, sans-serif;
+        }
+        footer {
+            background-color: #e0bdee; 
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+     </style>
+     <link href="Aquawax_Fx_Extralight_Italic_trial/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nev.html">Новинки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="work.html">Вакансии</a></li>
+                <li>
+                    <a href="#">Дополнительно</a> 
+                    <ul class="submenu">
+                        <li><a href="akc.html">Акции</a></li>
+                        <li><a href="loyal.html">Программа лояльности</a></li>
+                        <li><a href="oo.html">Отзывы</a></li>
+<li><a href="dop.html">Другая продукция</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  
+   <div class="content">
+        <div>
+            <h1>Bloom Lab</h1>
+            <p style="font-family: 'Aquawax Fx Extralight Italic trial'">Мы предлагаем широкий выбор свежих цветов и букетов на любой случай.</p>
+          <button class="button" onclick="location.href='catal.html'">Перейти в каталог</button> 
+          
+        </div>
+        <img src="mag.jpg"> 
+    </div>
+	<div class="highlight-section" style="background-color: #e3fed3; text-align: center; font-family: 'Aquawax Fx Extralight Italic trial';"> 
+      <h1><br>
+      </h1>
+      <h1>&nbsp;</h1>
+      
+      <h1> Bloom Lab — цветочный концепт нового поколения!</h1>
+      <h2>Мы не просто продаем цветы — создаём эмоции. В нашем бутике вы найдете: &nbsp;</h2>
+<h3><strong>Авторские букеты</strong> — смелые сочетания и трендовые стили</h3>
+    <h3><strong>Растения в стекле</strong> — модные террариумы и флорариумы</h3>
+    <h3>Цветочные подписки — свежее настроение каждую неделю&nbsp;</h3>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+</div>
+
+ <footer>
+   <p>Воронеж, ул. Пл. Ленина <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #1B1B1B;">10.</span>&nbsp;</p>
+   <p>Мы в социальных сетях: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>Все права защищены<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025&nbsp;</span></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный магазин</title>
+     <style>
+     @import url("Leotaro_Regular/stylesheet.css");
+
+        @font-face {
+            font-family: 'Aquawax';
+            src: url('Aquawax-Fx-Extralight-Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Leotaro';
+            src: url('Leotaro-Regular.woff') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+	margin: 0;
+	font-family: 'Aquawax', sans-serif;
+	background-color: #e3fed3;
+	background-size: cover;
+	background-position: center;
+	text-align: left;
+        }
+        header {
+            background-color: #e0bdee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative; 
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+.submenu {
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            background-color: #fff; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; 
+        }
+
+        .submenu li {
+            display: block; 
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 8px 12px; 
+            display: block; 
+        }
+
+        nav ul li:hover .submenu {
+            display: block; 
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+        .content div {
+            flex: 1; 
+            max-width: 40%; 
+        }
+        .content img {
+            max-width: 60%; 
+            height: auto;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+          
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+        h1 {
+    text-align: center;
+    font-family: "Leotaro Regular";
+        }
+        .button {
+            background-color: #e0bdee;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #e0bdee; 
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+     </style>
+     <link href="Leotaro_Regular/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nev.html">Новинки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="work.html">Вакансии</a></li>
+                <li>
+                    <a href="#">Дополнительно</a> 
+                    <ul class="submenu">
+                        <li><a href="akc.html">Акции</a></li>
+                        <li><a href="loyal.html">Программа лояльности</a></li>
+                        <li><a href="oo.html">Отзывы</a></li>
+<li><a href="dop.html">Другая продукция</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="highlight-section" style="background-color:  #e3fed3;">
+     <h1>&nbsp;</h1>
+       <h1>&nbsp;</h1>
+<h1>Доставка и оплата</h1>
+   
+<table width="1660" border="0">
+   <tr>
+     <td width="433" rowspan="3"><img src="IMG_7500.JPG" width="399" height="400"></td>
+     <td width="1211" height="77"><h2>Как оформить заказ?</h2></td>
+   </tr>
+   <tr>
+     <td height="179"><p>Сделать заказ в «Bloom Lab» легко и удобно!</p>
+     <p>• Онлаийн – выберите букет или товар на нашем саи те, добавьте в   корзину и укажите адрес доставки.      </p>
+     <p>• По телефону – позвоните нам по номеру <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">+7 (951) 123-45-67,</span> и   менеджер поможет с выбором.</p>
+     <p> • В магазине – посетите наш салон по адресу: г. Воронеж, пл. Ленина   для личного оформления. </p></td>
+   </tr>
+   <tr>
+     <td height="125"><strong>Нужна помощь? Напишите нам в WhatsApp или онлайн-чат – ответим   моментально! </strong></td>
+   </tr>
+ </table>
+<table width="1664" height="278" border="0">
+   <tr>
+     <td height="58"> <h2 style="font-family: 'Leotaro Regular'">Как оплатить? </h2>&nbsp;</td>
+   </tr>
+   <tr>
+     <td><p>Мы предлагаем удобные способы оплаты:</p>
+     <p> • Онлаи н-оплата – банковскои  картои  (Visa, Mastercard, МИР) через   безопасныи  платежныи  шлюз.</p>
+     <p> • Наличными – курьеру при получении заказа (только для доставки).      • Безналичныи  расчет – для юридических лиц (по запросу выставляем   счет).</p>
+     <p> • Подарочныи  сертификат – можно использовать как полную или   частичную оплату. </p></td>
+   </tr>
+ </table>
+ <p>&nbsp; &nbsp; &nbsp; &nbsp;<strong>Оплата проходит безопасно, без комиссии . Данные карт надежно   защищены. </strong> </p>
+<table width="1604" height="654" border="0" align="left">
+   <tr>
+     <td width="975" height="79"><h2 style="font-family: 'Leotaro Regular'; text-align: right;">Условия доставки&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </h2>       &nbsp;</td>
+     <td width="676" rowspan="2"><img src="IMG_7499.JPG " width="650" height="645"></td>
+   </tr>
+   <tr>
+     <td><p style=" text-align: right;">Доставляем цветы с заботои  и точно в срок!&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> Сроки доставки:&nbsp; &nbsp; </p>
+     <p style=" text-align: right;">• Сегодня – при заказе до <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">18:00 </span>(время зависит от загруженности).&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> • На определенную дату – укажите желаемую дату и время при   оформлении.&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> Зоны доставки:&nbsp; &nbsp; </p>
+     <p style=" text-align: right;">• Бесплатно – в пределах города при заказе от <span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">5 000 </span>₽.&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> • За пределами города – стоимость уточняи те у менеджеров.&nbsp; &nbsp; </p>
+     <p style=" text-align: right;">Дополнительные услуги:&nbsp; &nbsp; </p>
+     <p style=" text-align: right;">• Срочная доставка (+<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">25</span>% к стоимости).&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> • Фотоотчет – бесплатно по запросу.&nbsp; &nbsp;</p>
+     <p style=" text-align: right;"> • Анонимная доставка – без указания отправителя.&nbsp; &nbsp;</p>
+     <p><span style="color: #e3fed3#e3fed3; text-align: right;">&nbsp;</span></p>
+     <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p></td>
+   </tr>
+ </table>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>=&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<footer>
+  <p>Воронеж, ул. Пл. Ленина <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #1B1B1B;">10.</span>&nbsp;</p>
+   <p>Мы в социальных сетях: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>Все права защищены<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025&nbsp;</span></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Цветочный магазин</title>
+     <style>
+     @import url("Leotaro_Regular/stylesheet.css");
+
+        @font-face {
+            font-family: 'Aquawax';
+            src: url('Aquawax-Fx-Extralight-Italic-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Leotaro';
+            src: url('Leotaro-Regular.woff') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Aquawax', sans-serif; 
+             background-color:  #e3fed3; 
+            background-size: cover;
+            background-position: center; 
+        }
+       header {
+            background-color: #e0bdee;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 60px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            display: inline-block;
+            position: relative; 
+            margin-left: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+.submenu {
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0;
+            background-color: #fff; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; 
+        }
+
+        .submenu li {
+            display: block; 
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 8px 12px; 
+            display: block; 
+        }
+
+        nav ul li:hover .submenu {
+            display: block; 
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+        }
+        .content div {
+            flex: 1; 
+            max-width: 40%; 
+        }
+        .content img {
+            max-width: 60%; 
+            height: auto;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+          
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+        h1 {
+    text-align: center;
+    font-family: "Leotaro Regular";
+        }
+        .button {
+            background-color: #e0bdee;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #e0bdee; 
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 110%;
+        }
+     #apDiv2 {
+	position: absolute;
+	left: 20px;
+	top: -125px;
+	width: 1667px;
+	height: 512px;
+	z-index: 1;
+	background-color: #FFFF99;
+}
+     #apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+     #apDiv3 {
+	position: absolute;
+	width: 1668px;
+	height: 311px;
+	z-index: 1;
+	left: -4px;
+	top: 380px;
+	text-align: left;
+}
+     #apDiv4 {
+	position: absolute;
+	width: 1602px;
+	height: 115px;
+	z-index: 1;
+	font-family: Aquawax, sans-serif;
+}
+     #apDiv5 {
+	position: absolute;
+	width: 1658px;
+	height: 400px;
+	z-index: 1;
+	font-size: medium;
+	background-color: #E3FED3;
+}
+     #apDiv {	position: absolute;
+	width: 1658px;
+	height: 400px;
+	z-index: 1;
+	font-size: medium;
+	background-color: #E3FED3;
+}
+     #apDiv6 {position: absolute;
+	width: 1658px;
+	height: 400px;
+	z-index: 1;
+	font-size: medium;
+	background-color: #E3FED3;
+}
+     #apDiv7 {
+	position: absolute;
+	width: 1661px;
+	height: 400px;
+	z-index: 2;
+	top: 1187px;
+}
+     #apDiv8 {
+	position: absolute;
+	width: 1683px;
+	height: 400px;
+	z-index: 1;
+}
+     #apDiv9 {
+	position: absolute;
+	width: 1688px;
+	height: 400px;
+	z-index: 2;
+	top: 810px;
+}
+     #apDiv10 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 3;
+	left: 1688px;
+	top: 823px;
+}
+     #apDiv11 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 1185px;
+	top: -115px;
+}
+     #apDiv12 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	left: 892px;
+	top: -515px;
+}
+     #apDiv13 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 2;
+	left: 933px;
+	top: 496px;
+}
+     </style>
+     <link href="Aquawax_Fx_Extralight_Italic_trial/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="nev.html">Новинки</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="work.html">Вакансии</a></li>
+                <li>
+                    <a href="#">Дополнительно</a> 
+                    <ul class="submenu">
+                        <li><a href="akc.html">Акции</a></li>
+                        <li><a href="loyal.html">Программа лояльности</a></li>
+                        <li><a href="oo.html">Отзывы</a></li>
+<li><a href="dop.html">Другая продукция</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<div class="highlight-section" style="background-color:  #e3fed3;">
+     <h1>&nbsp;</h1>
+  <h1>&nbsp;</h1>
+        <h1>Bloom Lab — цветочная лаборатория ваших эмоций</h1>
+        <p>&nbsp;</p>
+</div>
+
+  <table width="1666" height="496" border="0">
+    <tr>
+      <td width="147">&nbsp;</td>
+      <td width="806"><p style="font-family: 'Aquawax Fx Extralight Italic trial'; font-size: 18px;">Приветствуем вас в Bloom Lab — месте, где цветы становятся искусством, а   каждый букет рассказывает свою историю. Мы не просто магазин, а   творческая мастерская, где рождаются уникальные композиции,   наполненные смыслом и любовью к природе.</p></td>
+      <td width="515">.<img src="IMG_7490.JPG" alt="" width="400" height="400" /></td>
+      <td width="180">&nbsp;</td>
+    </tr></td>
+    </tr>
+  </table>
+  <table width="1666" height="496" border="0">
+    <tr>
+      <td width="147">&nbsp;</td>
+      <td width="468"><h4><img src="IMG_7478.JPG" alt="" width="400" height="400" /></h4></td>
+      <td width="853" style="font-family: 'Leotaro Regular'"><h2>Как всё начиналось</h2>
+      <p><span style="font-family: 'Aquawax Fx Extralight Italic trial'">Bloom Lab появился в<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025 </span>благодаря страстному увлечению флористикой 
+нашей основательницы. Её мечта — создавать не просто красивые букеты, 
+а настоящие эмоциональные переживания — воплотилась в этом проекте. 
+Сегодня мы объединяем современные тренды, натуральность и 
+индивидуальный подход, чтобы дарить вам радость через цветы. </span>.</p></td>
+      <td width="180">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1666" height="496" border="0">
+    <tr>
+      <td width="147">&nbsp;</td>
+      <td width="853" style="font-family: 'Leotaro Regular'"><h2>Наша команда </h2>
+      <p><span style="font-family: 'Aquawax Fx Extralight Italic trial'">Мы — команда вдохновленных флористов, дизайнеров и просто 
+неравнодушных к красоте людей. Каждый наш специалист:   
+   Профессионал с художественным вкусом и вниманием к деталям   
+   Знаток свежести — работаем только с проверенными поставщиками   
+   Настоящий психолог цветов — поможет подобрать идеальный букет 
+для любого настроения. </span>.</p></td>
+      <td width="515">.<img src="IMG_7479.JPG" alt="" width="400" height="400" /></td>
+      <td width="180">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1666" height="496" border="0">
+    <tr>
+      <td width="147">&nbsp;</td>
+      <td width="468"><h4><img src="IMG_7477.JPG" alt="" width="400" height="400" /></h4></td>
+      <td width="853" style="font-family: 'Leotaro Regular'"><h2>Почему Bloom Lab — это особенный магазин? &nbsp;</h2>
+      <p><span style="font-family: 'Aquawax Fx Extralight Italic trial'">   Свежесть выше всего — наши цветы живут дольше благодаря 
+правильному уходу и быстрой логистике.   
+        Авторский подход — нестандартные сочетания, редкие сорта и смелые 
+идеи.   
+      Экологичность — минимум упаковки, только натуральные материалы.   
+     Персональный сервис — букеты под заказ, подписка на цветы и 
+оформление мероприятий.  </span>.</p></td>
+      <td width="180">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1666" height="496" border="0">
+    <tr>
+      <td width="147">&nbsp;</td>
+      <td width="853" style="font-family: 'Leotaro Regular'"><h2>Дарите эмоции с Bloom Lab!</h2>
+      <p>.<br data_temp_dwid="0">
+      <span style="font-family: 'Aquawax Fx Extralight Italic trial'"> 
+	  <ul>
+        <li>г. Воронеж, пл. Ленина</li>
+        <li>Телефон: +7 (951) 123-45-67</li>
+        <li>Email: <a href="mailto:bloomlab@mail.ru">bloomlab@mail.ru</a></li>
+        <li>Instagram: <a href="https://instagram.com/bloomlab" target="_blank">@bloomlab</a></li>
+    </ul>
+<h2>Пусть каждый день будет в цветах!</h3>
+	    </span>.</p></td>
+      <td width="515">.<img src="IMG_7496.JPG" alt="" width="400" height="400" /></td>
+      <td width="180">&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<footer>
+  <p>Воронеж, ул. Пл. Ленина <span style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; color: #1B1B1B;">10.</span>&nbsp;</p>
+   <p>Мы в социальных сетях: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> </p>
+        <p>Все права защищены<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"> 2025&nbsp;</span></p>
+</footer>
+</body>
+</html>
